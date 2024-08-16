@@ -12,7 +12,6 @@ class WidgetCommentFormulario extends StatefulWidget {
 }
 
 class _WidgetCommentFormularioState extends State<WidgetCommentFormulario> {
-  TextEditingController idComment = TextEditingController();
   TextEditingController userName = TextEditingController();
   TextEditingController commentary = TextEditingController();
   TextEditingController idRoom = TextEditingController();
@@ -38,8 +37,7 @@ class _WidgetCommentFormularioState extends State<WidgetCommentFormulario> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        TextField(controller: idComment,decoration: const InputDecoration(labelText: "Id"),)
-        ,TextField(controller: userName,decoration: const InputDecoration(labelText: "Usuario"),)
+        TextField(controller: userName,decoration: const InputDecoration(labelText: "Usuario"),)
         ,TextField(controller: commentary,decoration: const InputDecoration(labelText: "Comentario"),)
         ,TextField(controller: idRoom,decoration: const InputDecoration(labelText: "IdRoom"),)
         ,ElevatedButton(onPressed: () async {

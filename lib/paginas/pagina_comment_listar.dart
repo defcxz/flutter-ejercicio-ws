@@ -23,15 +23,15 @@ class _PaginaCommentListarState
         Navigator
             .push(
             context,
-            MaterialPageRoute(builder: (context) => PaginaCommentInsertar())
+            MaterialPageRoute(builder: (context) => const PaginaCommentInsertar())
         ).then((dynamic valor) {
           setState(() {
             // actualiza la pagina
           });
         });
-      },child: Icon(Icons.add),),
+      },child: const Icon(Icons.add),),
       appBar: AppBar(
-        title: Text("Listar de Comentarios"),
+        title: const Text("Listar de Comentarios"),
       ),
       body: StreamBuilder(
         stream: CommentSrv.obtenerListadoStream(),
@@ -39,7 +39,7 @@ class _PaginaCommentListarState
           if(snap.hasData) {
             return WidgetCommentListar(snap.requireData);
           } else {
-            return Text("Sin datos");
+            return const Text("Sin datos");
           }
         },
       ),

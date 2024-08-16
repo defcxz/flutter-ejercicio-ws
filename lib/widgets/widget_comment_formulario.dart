@@ -38,15 +38,15 @@ class _WidgetCommentFormularioState extends State<WidgetCommentFormulario> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        TextField(controller: idComment,decoration: InputDecoration(labelText: "Id"),)
-        ,TextField(controller: userName,decoration: InputDecoration(labelText: "Usuario"),)
-        ,TextField(controller: commentary,decoration: InputDecoration(labelText: "Comentario"),)
-        ,TextField(controller: idRoom,decoration: InputDecoration(labelText: "IdRoom"),)
+        TextField(controller: idComment,decoration: const InputDecoration(labelText: "Id"),)
+        ,TextField(controller: userName,decoration: const InputDecoration(labelText: "Usuario"),)
+        ,TextField(controller: commentary,decoration: const InputDecoration(labelText: "Comentario"),)
+        ,TextField(controller: idRoom,decoration: const InputDecoration(labelText: "IdRoom"),)
         ,ElevatedButton(onPressed: () async {
           await CommentSrv.agregarComment(widget.comment);
           Navigator.pop(context);
 
-        }, child:Text("Insertar"))
+        }, child: const Text("Insertar"))
       ],
     );
   }

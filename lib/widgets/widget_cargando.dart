@@ -12,10 +12,10 @@ class _WidgetCargandoState extends State<WidgetCargando> {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.sizeOf(context).width,
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             "Cargando....",
             textAlign: TextAlign.center,
           ),

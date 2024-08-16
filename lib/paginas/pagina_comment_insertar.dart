@@ -21,7 +21,7 @@ class _PaginaCommentInsertarState extends State<PaginaCommentInsertar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Insertar Libro"),),
+      appBar: AppBar(title: const Text("Insertar Comentario"),),
       body: WidgetCommentFormulario(comment),
     );
   }

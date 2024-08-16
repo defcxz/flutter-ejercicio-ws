@@ -15,10 +15,10 @@ class Comment {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['IdComment'] = this.idComment;
-    data['UserName'] = this.userName;
-    data['Commentary'] = this.commentary;
-    data['IdRoom'] = this.idRoom;
+    data['IdComment'] = idComment;
+    data['UserName'] = userName;
+    data['Commentary'] = commentary;
+    data['IdRoom'] = idRoom;
     return data;
   }
 }
